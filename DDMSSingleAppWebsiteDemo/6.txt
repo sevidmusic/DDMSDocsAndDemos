@@ -1,0 +1,2 @@
+5. Make the SingleAppWebsite App from the SingleAppWebsite App Package
+Run: dsh -m "$HOME/SingleAppWebsite"

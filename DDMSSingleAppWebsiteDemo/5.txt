@@ -1,0 +1,11 @@
+4. Define an OutputComponent for the SingleAppWebsite App
+   Run: vim "$HOME/SingleAppWebsite/OutputComponents.sh"
+   Add: dsh -n OutputComponent "${app_name}" SingleAppWebsite OutputContainer 0 "Hello World"
+   Add: dsh -a "${app_name}" SingleAppWebsiteResponse SingleAppWebsite OutputContainer OutputComponent
+
+
+
+
+
+
+

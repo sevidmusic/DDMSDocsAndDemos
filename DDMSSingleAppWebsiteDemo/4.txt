@@ -1,0 +1,4 @@
+3. Define a GlobalResponse for the SingleAppWebsite App
+   Run: vim "$HOME/SingleAppWebsite/Responses.sh"
+   Add: dsh -n GlobalResponse "${app_name}" SingleAppWebsiteResponse 0
+
