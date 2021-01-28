@@ -1,0 +1,9 @@
+The Darling Data Management System is now installed and ready to use for development :)
+
+For more information about the Darling Data Management System please visit one of the following links:
+
+    https//github.com/sevidmusic/darlingdatamanagementsystem/
+
+    http://darlingdata.tech/
+
+

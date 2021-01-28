@@ -1,0 +1,5 @@
+As a simple example, let's create a Hello World App.
+
+Step 1. Creatae a new App Package for the HelloWorld App
+          dsh -n AppPackage HelloWorld "$HOME"
+

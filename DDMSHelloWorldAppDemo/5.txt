@@ -1,0 +1,11 @@
+4. Define an OutputComponent for the HelloWorld App
+     vim "$HOME/HelloWorld/OutputComponents.sh"
+       dsh -n OutputComponent "${app_name}" HelloWorld OutputContainer 0 "Hello World"
+       dsh -a "${app_name}" HelloWorldResponse HelloWorld OutputContainer OutputComponent
+
+
+
+
+
+
+

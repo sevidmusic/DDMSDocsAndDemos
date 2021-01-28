@@ -1,0 +1,4 @@
+3. Define a GlobalResponse for the HelloWorld App
+     vim "$HOME/HelloWorld/Responses.sh"
+       dsh -n GlobalResponse "${app_name}" HelloWorldResponse 0
+

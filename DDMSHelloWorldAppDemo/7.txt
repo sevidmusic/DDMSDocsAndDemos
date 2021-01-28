@@ -1,0 +1,4 @@
+6. Build the HelloWorld App to run on http://localhost:8080
+     dsh -b HelloWorld "http://localhost:8080"
+
+

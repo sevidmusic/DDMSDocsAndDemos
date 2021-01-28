@@ -1,0 +1,7 @@
+8. View the new HelloWorld App running on http://localhost:8080 in a web browser.
+     w3m http://localhost:8080
+
+   Note: "w3m" is the browser used in this demo, w3m is awesome, but it is not 
+         required or related to the Darling Data Management System.
+
+         

@@ -1,0 +1,5 @@
+Make sure dsh is working by running dsh -l.
+
+If dsh is working the complete path to the Darling Data Management System
+should be displayed.
+
