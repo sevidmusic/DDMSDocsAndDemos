@@ -1,5 +1,4 @@
 The following Component types will be used in this example:
-
 Request                Represnts a url such as http://singleappsite.example/
                        Note: Requests can be used to represent any url, not just urls
                              relative to the App's domain. However, Responses and
@@ -22,3 +21,4 @@ DynamicOutputComponent Represents an App's dynamic output, this is output genera
                        by an assigned file that exists in either the Darling Data
                        Managment System's SharedDynamicOutput directory, or the
                        App's DynamicOutput directory.
+

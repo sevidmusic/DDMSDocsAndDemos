@@ -7,3 +7,4 @@ One GlobalResponse will be defined for the main menu.
    Add: dsh -n GlobalResponse "${app_name}" MainMenu 0
    Add: dsh -n Response "${app_name}" Homepage 1
    Add: dsh -n Response "${app_name}" Pictures 1
+

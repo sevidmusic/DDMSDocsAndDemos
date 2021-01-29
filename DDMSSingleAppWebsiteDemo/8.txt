@@ -17,3 +17,4 @@ http://singleappsite.example/index.php?Pictures
    Add: dsh -n Request "${app_name}" HomepageIndex HomepageRequests "index.php"
    Add: dsh -n Request "${app_name}" Homepage HomepageRequests "index.php?Hompeage"
    Add: dsh -n Request "${app_name}" Pictures PicturesRequests "index.php?Pictures"
+

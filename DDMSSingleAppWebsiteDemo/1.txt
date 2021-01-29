@@ -10,3 +10,4 @@ Single App Site Pages:
 1. Homepage: Show a welcome message.
 2. Pictures: Show a simple image gallery that uses javascript to cycyle through
    the pictures.
+
