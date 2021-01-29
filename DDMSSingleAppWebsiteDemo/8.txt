@@ -1,3 +1,19 @@
-7. Start a development server on local host at port 8080
-   Development server will be reachable via http://localhost:8080
-     dsh -s 8080
+Next, define the Requests for the the website.
+
+Three Requests will be defined for the homepage, this is to reflect that the
+Homepage should be accesible at the following urls:
+
+http://singleappsite.example/
+http://singleappsite.example/index.php
+http://singleappsite.example/index.php?Homepage
+
+The Pictures page only requires one Requuest so it is accessible at:
+http://singleappsite.example/index.php?Pictures
+
+3. Define the App's Requests and assign them to the appropriate Responses and
+   GlobalResponses:
+   Run: vim "$HOME/SingleAppSite/Requests.sh"
+   Add: dsh -n Request "${app_name}" HomepageRoot HomepageRequests "\/"
+   Add: dsh -n Request "${app_name}" HomepageIndex HomepageRequests "index.php"
+   Add: dsh -n Request "${app_name}" Homepage HomepageRequests "index.php?Hompeage"
+   Add: dsh -n Request "${app_name}" Pictures PicturesRequests "index.php?Pictures"

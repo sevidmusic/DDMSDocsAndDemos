@@ -1,4 +1,9 @@
-6. Build the SingleAppWebsite App to run on http://localhost:8080
-   Run: dsh -b SingleAppWebsite "http://localhost:8080"
+Two Responses will be defined, one for the Homepage, and one for the Pictures page.
 
+One GlobalResponse will be defined for the main menu.
 
+4. Define the App's Responses and GlobalResponses:
+   Run: vim "$HOME/SingleAppSite/Requests.sh"
+   Add: dsh -n GlobalResponse "${app_name}" MainMenu 0
+   Add: dsh -n Response "${app_name}" Homepage 1
+   Add: dsh -n Response "${app_name}" Pictures 1

@@ -1,11 +1,24 @@
-4. Define an OutputComponent for the SingleAppWebsite App
-   Run: vim "$HOME/SingleAppWebsite/OutputComponents.sh"
-   Add: dsh -n OutputComponent "${app_name}" SingleAppWebsite OutputContainer 0 "Hello World"
-   Add: dsh -a "${app_name}" SingleAppWebsiteResponse SingleAppWebsite OutputContainer OutputComponent
+The following Component types will be used in this example:
 
+Request                Represnts a url such as http://singleappsite.example/
+                       Note: Requests can be used to represent any url, not just urls
+                             relative to the App's domain. However, Responses and
+                             GlobalResponses will only respond to Requests that represent
+                             a url relative to the App's domain.
 
+Response               Represents a response to a specific Request to the App's domain.
+                       Responses are used to group OutputComponents and DynamicOutputComponents
+                       together whose output is intended to be shown in response to a specific
+                       Request to the App's domain.
 
+GlobalResponse         Represents a response to all Requests relative to the App's domain.
+                       Global Responses are used to group OutputComponents and
+                       DynamicOutputComponents together whose output is intended to be
+                       shown in response to a all Requests to the App's domain.
 
+OutputComponent        Represents an App's static output.
 
-
-
+DynamicOutputComponent Represents an App's dynamic output, this is output generated
+                       by an assigned file that exists in either the Darling Data
+                       Managment System's SharedDynamicOutput directory, or the
+                       App's DynamicOutput directory.
