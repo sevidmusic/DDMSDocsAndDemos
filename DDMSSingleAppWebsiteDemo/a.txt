@@ -1,15 +1,23 @@
 The App in this example is going to generate a website, so the App will need to
 define OutputComponents and DynamicOutputComponents for the sites html, css, and
-javascript.
+javascript. In order for these OutputComponents and DynamicOutputComponent to be
+served to a user in response to an appropriate Request, they must be assigned to
+an appropriate Response or GlobalResponse.
 
-Some of this output will be static, meaning it will never change. A good example
-of this in the context of a website is the <!DOCTYPE> tag.
+It is important to understand Responses and GlobalResponses are sorted relative
+to each other by their assigned positions. Likewise, OutputComponents and DynamicOutputComponents
+are also sorted relativeto each other by their assigned position within the context
+of the Response or GlobalResponse they are assigned to. For example, say a single
+App is running on a domain, and it defines two GlobalResponses, and 3 OutputComponents:
 
-Some of this output will be dynamically generated from an assigned file. The <title>
-tag is a good example of this since it will likely be different for each request..
+  GlobalResponse, Foo at position 1 assigned OutputComponents:
+    Baz at position 0 with output "BazOutput"
+    Bazzer at position 5 with output "--BazzerOutput--"
 
-Some of this output will need to be shown globally, the <!DOCTYPE> tag is good
-example of this as well.
+  GlobalResponse, Bar, at position 0 assigned OutputCompoent:
+    Bazbiz at position 0 with output "<p>BazBizOutput<p>"
 
-Some of this output will only be shown for specific requests.
+Then the output of any Request to the domain the App is running on will produce
+the following output:
 
+  BazOutput--BazzerOutput--<p>BazBizOutput</p>

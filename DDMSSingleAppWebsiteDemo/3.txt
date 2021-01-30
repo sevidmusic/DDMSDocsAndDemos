@@ -1,6 +1,6 @@
 The bash scripts in the App package must be executable in order for the App
-Package to be able to be made into an App later via dsh --make-app
+Package to be able to be made into an App later via dsh --make-app.
 
-2. Make sure the App Package's scripts are executable
+2. Make sure the App Package's scripts are executable.
    Run: chmod -R 0755 "$HOME/SingleAppWebsite/*.sh"
 

@@ -3,7 +3,7 @@ the Pictures page.
 
 Additionally, one GlobalResponse will be defined for the main menu.
 
-4. Define the App's Responses and GlobalResponses:
+3. Define the App's Responses and GlobalResponses:
    Run: vim "$HOME/SingleAppSite/Requests.sh"
    Add: dsh -n GlobalResponse "${app_name}" MainMenu 0
    Add: dsh -n Response "${app_name}" Homepage 1

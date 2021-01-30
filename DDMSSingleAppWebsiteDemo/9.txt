@@ -1,14 +1,14 @@
 Finally, define the OutputComponents and DynamicOutputComponents for the website.
 
 Before doing this it is important to understand how an App's output is served to
-a user by the Darling Data Managment System. When a user makes a request to the
+a user by the Darling Data Managment System. When a user makes a Request to the
 domain of a website running on the Darling Data Managment System the first thing
 that happens is a Router Component is used to determine which Responses and
 GlobalResponses respond to the current Request. These Responses and GlobalResponses
 may be defined by one, or many Apps running on the same domain.
 
 Then, the collective output of the OutputComponents and DynamicOutputComponents
-assigned to each Response and GlobalResponses that respond to the current Reuest
+assigned to each Response and GlobalResponses that respond to the current Request
 is shwon to the user.
 
 To put it very simply, the Darling Data Managment System takes the all of the
