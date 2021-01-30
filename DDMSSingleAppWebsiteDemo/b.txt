@@ -1,9 +1,1 @@
-A final note on how an App's output is shown to the user.
-
-It is important to understand Responses and GlobalResponses are sorted relative
-to each other by their assigned positions.
-
-Likewise, OutputComponents and DynamicOutputComponents are also sorted relatvie to
-each other by their assigned position within the context of the Response or GlobalResponse
-they are assigned to.
 

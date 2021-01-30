@@ -18,7 +18,7 @@ GlobalResponse         Represents a response to all Requests relative to the dom
 OutputComponent        Represents an App's static output.
 
 DynamicOutputComponent Represents an App's dynamic output, this is output generated
-                       by an assigned file that exists in either the Darling Data
-                       Managment System's SharedDynamicOutput directory, or the
-                       App's DynamicOutput directory.
-
+                       by interpreting an assigned file that exists in either the
+                       Darling Data Managment System's SharedDynamicOutput directory,
+                       or the App's DynamicOutput directory. This file can be a plain
+                       text file, a PHP file, an html file, a json file, etc.
