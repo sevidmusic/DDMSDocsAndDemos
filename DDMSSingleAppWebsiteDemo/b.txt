@@ -4,9 +4,21 @@
    Add: dsh -n OutputComponent "${app_name}" DTOHtml StaticHtml 0 '<!DOCTYPE><html lang="en">'
    Add: dsh -a $"{app_name}" OpeningHtml DTOHtml StaticHtml OutputComponent
 
-   Add: dsh -n DynamicOutputComponent "${app_name}" Head DynamicOutput 1 "HtmlHead.php"
+   Add: dsh -n DynamicOutputComponent "${app_name}" Head DynamicOutput 0.1 "HtmlHead.php"
    Add: dsh -a $"{app_name}" OpeningHtml HtmlHead DynamicOutput DynamicOutputComponent
 
-   Add: dsh -n DynamicOutputComponent "${app_name}" MainMenu DynamicOutput 1 "MainMenu.html"
+   Add: dsh -n OutputComponent "${app_name}" OpenBodyTag StaticHtml 0.2 '<body>'
+   Add: dsh -a $"{app_name}" OpeningHtml OpenBodyTag StaticHtml OutputComponent
+
+   Add: dsh -n DynamicOutputComponent "${app_name}" MainMenu DynamicOutput 0.3 "MainMenu.html"
    Add: dsh -a $"{app_name}" OpeningHtml MainMenu DynamicOutput DynamicOutputComponent
+
+   Add: dsh -n DynamicOutputComponent "${app_name}" Homepage DynamicOutput 0 "Homepage.php"
+   Add: dsh -a $"{app_name}" Homepage Homepage DynamicOutput DynamicOutputComponent
+
+   Add: dsh -n DynamicOutputComponent "${app_name}" Pictures DynamicOutput 0 "Pictures.html"
+   Add: dsh -a $"{app_name}" Pictures Pictures DynamicOutput DynamicOutputComponent
+
+   Add: dsh -n OutputComponent "${app_name}" FinalHtml StaticHtml 0 '</body></html>'
+   Add: dsh -a $"{app_name}" ClosingHtml FinalHtml StaticHtml OutputComponent
 

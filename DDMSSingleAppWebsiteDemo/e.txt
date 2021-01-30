@@ -1,0 +1,3 @@
+7. Start a development server at localhost on port 8080 to run the SingleAppSite App on.
+   The development server will be reachable from a browser via http://localhost:8080
+     dsh -s 8080

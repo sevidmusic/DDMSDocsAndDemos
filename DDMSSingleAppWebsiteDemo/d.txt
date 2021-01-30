@@ -1,0 +1,4 @@
+6. Build the SingleAppSite App.
+     dsh -b SingleAppSite
+
+
