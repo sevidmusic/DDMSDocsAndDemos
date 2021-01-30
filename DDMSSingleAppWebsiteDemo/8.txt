@@ -1,7 +1,5 @@
-Next, define the Requests for the the website.
-
-Three Requests will be defined for the homepage, this is to reflect that the
-Homepage should be accesible at the following urls:
+In this example, three Requests will be defined for the homepage, this is to
+reflect that the Homepage should be accesible at the following urls:
 
 http://singleappsite.example/
 http://singleappsite.example/index.php
@@ -14,7 +12,11 @@ http://singleappsite.example/index.php?Pictures
    GlobalResponses:
    Run: vim "$HOME/SingleAppSite/Requests.sh"
    Add: dsh -n Request "${app_name}" HomepageRoot HomepageRequests "\/"
+   Add: dsh -a "${app_name}" Homepage HomepageRoot HomepageRequests Request
    Add: dsh -n Request "${app_name}" HomepageIndex HomepageRequests "index.php"
+   Add: dsh -a "${app_name}" Homepage HomepageIndex HomepageRequests Request
    Add: dsh -n Request "${app_name}" Homepage HomepageRequests "index.php?Hompeage"
+   Add: dsh -a "${app_name}" Homepage Homepage HomepageRequests Request
    Add: dsh -n Request "${app_name}" Pictures PicturesRequests "index.php?Pictures"
+   Add: dsh -a "${app_name}" Pictures Pictures PicturesRequests Request
 

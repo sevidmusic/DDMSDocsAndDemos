@@ -1,6 +1,7 @@
-Two Responses will be defined, one for the Homepage, and one for the Pictures page.
+In this example, two Responses will be defined, one for the Homepage, and one for
+the Pictures page.
 
-One GlobalResponse will be defined for the main menu.
+Additionally, one GlobalResponse will be defined for the main menu.
 
 4. Define the App's Responses and GlobalResponses:
    Run: vim "$HOME/SingleAppSite/Requests.sh"
