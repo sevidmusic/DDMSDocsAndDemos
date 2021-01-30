@@ -16,9 +16,9 @@ and 3 OutputComponents:
     Bazzer at position 5 with output "--BazzerOutput--"
 
   GlobalResponse Bar, at position 0 assigned one OutputCompoent:
-    Bazbiz at position 0 with output "<p>BazBizOutput<p>"
+    Bazbiz at position 7 with output "<p>BazBizOutput<p>"
 
 Then the output of any Request to the domain the App is running on will produce
 the following output to be interpreted by the web browser:
 
-  BazOutput--BazzerOutput--<p>BazBizOutput</p>
+    <p>BazBizOutput</p>BazOutput--BazzerOutput--

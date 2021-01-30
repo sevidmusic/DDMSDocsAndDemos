@@ -1,11 +1,11 @@
-In this example, three Requests will be defined for the homepage, this is to
+In this example, three Requests will be defined for the Homepage, this is to
 reflect that the Homepage should be accesible at the following urls:
 
 http://singleappsite.example/
 http://singleappsite.example/index.php
 http://singleappsite.example/index.php?Homepage
 
-The Pictures page only requires one Requuest so it is accessible at:
+The Pictures page only requires one Request so it is accessible at:
 http://singleappsite.example/index.php?Pictures
 
 4. Define the App's Requests and assign them to the appropriate Responses and

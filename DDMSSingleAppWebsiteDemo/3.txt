@@ -1,3 +1,5 @@
+App's are made from App Packages via the dsh --make-app command.
+
 The bash scripts in the App package must be executable in order for the App
 Package to be able to be made into an App later via dsh --make-app.
 

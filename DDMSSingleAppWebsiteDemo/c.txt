@@ -1,2 +1,8 @@
+The final step is to define any DynamicOutput files referneced by the
+DynamicOutputComponents that were defined in the App Package's
+OutputComponents.sh script.
+
+#####
+
 5. Make the SingleAppSite App from the SingleAppSite App Package
      dsh -m "$HOME/SingleAppSite"
