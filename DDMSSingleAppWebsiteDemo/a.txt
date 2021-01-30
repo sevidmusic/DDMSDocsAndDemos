@@ -1,0 +1,15 @@
+The App in this example is going to generate a website, so the App will need to
+define OutputComponents and DynamicOutputComponents for the sites html, css, and
+javascript.
+
+Some of this output will be static, meaning it will never change. A good example
+of this in the context of a website is the <!DOCTYPE> tag.
+
+Some of this output will be dynamically generated from an assigned file. The <title>
+tag is a good example of this since it will likely be different for each request..
+
+Some of this output will need to be shown globally, the <!DOCTYPE> tag is good
+example of this as well.
+
+Some of this output will only be shown for specific requests.
+

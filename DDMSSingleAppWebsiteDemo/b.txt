@@ -1,0 +1,3 @@
+The organization of output can be approached a variety of ways,
+and will be different for each App.
+
