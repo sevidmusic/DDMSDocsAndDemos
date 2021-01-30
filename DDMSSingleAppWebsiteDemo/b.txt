@@ -1,1 +1,12 @@
+5. Define the App's OutputComponents and assign them to the appropriate Responses.
+
+   Run: vim "$HOME/SingleAppSite/OutputComponents.sh"
+   Add: dsh -n OutputComponent "${app_name}" DTOHtml StaticHtml 0 '<!DOCTYPE><html lang="en">'
+   Add: dsh -a $"{app_name}" OpeningHtml DTOHtml StaticHtml OutputComponent
+
+   Add: dsh -n DynamicOutputComponent "${app_name}" Head DynamicOutput 1 "HtmlHead.php"
+   Add: dsh -a $"{app_name}" OpeningHtml HtmlHead DynamicOutput DynamicOutputComponent
+
+   Add: dsh -n DynamicOutputComponent "${app_name}" MainMenu DynamicOutput 1 "MainMenu.html"
+   Add: dsh -a $"{app_name}" OpeningHtml MainMenu DynamicOutput DynamicOutputComponent
 

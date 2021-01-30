@@ -1,19 +1,18 @@
 The following Component types will be used in this example:
+
 Request                Represnts a url such as http://singleappsite.example/
                        Note: Requests can be used to represent any url, not just
                              urls relative to the domain the App is running on.
 
-Response               Represents a response to a specific Request to the domain
-                       the App is running on. Responses are used to group OutputComponents
-                       and DynamicOutputComponents together whose output is intended
-                       to be shown in response to a specific Request to the domain
-                       the App is running on.
+Response               Responses are used to group OutputComponents and
+                       DynamicOutputComponents together whose output is
+                       intended to be shown in response to a specific
+                       Request to the domain the App is running on.
 
-GlobalResponse         Represents a response to all Requests relative to the domain
-                       the App is running on. Global Responses are used to group
-                       OutputComponents and DynamicOutputComponents together whose
-                       output is intended to be shown in response to a all Requests
-                       to the domain the App is running on.
+GlobalResponse         Global Responses are used to group OutputComponents and
+                       DynamicOutputComponens together whose output is intended
+                       to be shown in response to a all Requests to the domain
+                       the App is running on.
 
 OutputComponent        Represents an App's static output.
 

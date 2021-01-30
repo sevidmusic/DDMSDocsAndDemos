@@ -20,4 +20,3 @@ positions will be adjusted as follows:
 Foo Position: 0
 Bar Position: 0.1
 Baz Position: 0.2
-

@@ -14,4 +14,3 @@ In this example a single App is going to generate a website.
 
 To do this the App needs to define appropriate Components to represent the various
 parts of the website.
-
