@@ -1,4 +1,5 @@
 -- Define the App's dynamic output files in the App Package's DynamicOutput directory --
+----------- Also create any files referenced within the dynamic output files -----------
 
 Note: The HtmlHead.php dynamic output file's content contains a <link> tag that references a css
       file, styles.css, this css file must be created in the App Package's css

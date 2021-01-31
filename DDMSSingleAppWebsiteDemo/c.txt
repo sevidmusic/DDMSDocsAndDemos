@@ -22,5 +22,4 @@ App.
 
 If an App defines a dynamic output file that shares a name with a dynamic output
 file defined in the SharedDynamicOutput directory, the  App's dynamic output file
-will be used. If two App's define a dynamic output file with the same name the
-first file found by the Darling Data Management System will be used.
+will be used.

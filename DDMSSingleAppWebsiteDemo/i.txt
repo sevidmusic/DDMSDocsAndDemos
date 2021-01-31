@@ -1,5 +1,6 @@
-6. Define the App's dynamic output files in the App Package's DynamicOutput directory:
+-- Define the App's dynamic output files in the App Package's DynamicOutput directory --
+----------- Also create any files referenced within the dynamic output files -----------
 
-6.d Create Pictures.html:
+10. Create Pictures.html:
 
 
