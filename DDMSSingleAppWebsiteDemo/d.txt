@@ -1,5 +1,10 @@
-6. Build the SingleAppWebsite App.
+The App in ths example expects the following dynamic output files to exist:
 
-     Run: dsh -b SingleAppWebsite
+HtmlHead.php
+MainMenu.html
+Homepage.php
+Pictures.html
+
+These files need to be created in the App Package's DynamicOutput directory.
 
 

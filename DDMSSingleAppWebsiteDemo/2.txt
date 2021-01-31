@@ -2,6 +2,6 @@ The first step in the development process with the Darling Data Management Syste
 is always to create a new App Package for the App to be developed.
 
 Step 1. Create a new App Package for the App that will generate output for
-        the website.
+        the website:
 
         Run: dsh -n AppPackage SingleAppWebsite "$HOME"

@@ -1,4 +1,4 @@
-7. Start a development server at localhost on port 8080 to run the SingleAppWebsite App on.
-   The development server will be reachable from a browser via http://localhost:8080
+6. Create the expected dynamic output files:
 
-     Run: dsh -s 8080
+6.a Create HtmlHead.php:
+

@@ -1,4 +1,4 @@
-5. Define the App's OutputComponents and assign them to the appropriate Responses.
+5. Define the App's OutputComponents and assign them to the appropriate Responses:
 
    Run: vim "$HOME/SingleAppSite/OutputComponents.sh"
 
