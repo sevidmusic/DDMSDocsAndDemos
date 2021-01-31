@@ -1,12 +1,5 @@
 -- Define the App's dynamic output files in the App Package's DynamicOutput directory --
 
-Note: Make sure to also create any css or js files referenced in any html defined
-      in the dynamic output files. Css files should be placed in the App Package's
-      css directory, js files should be placed in the App Package's js directory.
-      This must be done so dsh knows to include them with the files copied from
-      the App Package to the App whenever dsh --make-app is run to make an
-      instance of the App.
-
 6. Create DynamicOutput/HtmlHead.php:
    Run: vim "$HOME/SingleAppWebsite/DynamicOutput/HtmlHead.php"
    Add:

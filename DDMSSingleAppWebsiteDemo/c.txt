@@ -12,8 +12,8 @@ For example:
 
 Dynamic output files that are used by a single App should be defined in the
 relevant App Package's DynamicOutput directory so that dsh can copy them to the
-App's DynamicOutput directory whenever the App is made from the App Package
-via dsh --make-app.
+App's DynamicOutput directory whenever an instance of the App is made from the
+App Package via dsh --make-app.
 
 Dynamic output files that are used by multiple App's should be placed in the Darling
 Data Management System's SharedDynamicOutput directory. These dynamic output files

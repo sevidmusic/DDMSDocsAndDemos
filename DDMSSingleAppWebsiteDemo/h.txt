@@ -1,5 +1,4 @@
-6.c Create Homepage.php:
+-- Define the App's dynamic output files in the App Package's DynamicOutput directory --
 
-6. Define the App's dynamic output files in the App Package's DynamicOutput directory:
-
+9. Create Homepage.php:
 

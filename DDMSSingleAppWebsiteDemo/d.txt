@@ -1,10 +1,25 @@
-The App in ths example expects the following dynamic output files to exist:
+The App Package in this example will define the following dynamic output files:
 
-HtmlHead.php
-MainMenu.html
-Homepage.php
-Pictures.html
+    HtmlHead.php
+    MainMenu.html
+    Homepage.php
+    Pictures.html
 
 These files need to be created in the App Package's DynamicOutput directory.
 
+Important note about file references within a dynamic output file:
+    Sometimes is may be necessary to reference a file from within a dynamic output
+    file, for example, a css file. Always make sure those files exist and are
+    accessible.
 
+    Css and javascript files referenced within a dynamic output file should be placed
+    in the App Package's css and javascript directories, respectively, so that dsh
+    knows to include them with the files copied from the App Package to the App
+    whenever dsh --make-app is run to make an instance of the App. The one exception
+    to this is if the files are hosted
+
+The App Package in this example will define the following css file in the App
+Package's css directory. This file will be referenced from a <link> tag defined
+in the HtmlHead.php file's content:
+
+    styles.css
