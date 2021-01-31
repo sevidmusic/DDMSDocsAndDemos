@@ -1,6 +1,6 @@
 The following Component types will be used in this example:
 
-Request                Represents a url such as http://singleappsite.example/
+Request                Represents a url such as http://APP_DOMAIN/
                        Note: Requests can be used to represent any url, not just
                              urls relative to the domain the App is running on.
 
@@ -21,3 +21,6 @@ DynamicOutputComponent Represents an App's dynamic output, this is output genera
                        Darling Data Management System's SharedDynamicOutput directory,
                        or the App's DynamicOutput directory. This file can be a plain
                        text file, a PHP file, an html file, a json file, etc.
+                       Note: Files that have the .php file extension will be
+                             interpreted as executable PHP code, all other file
+                             types will be interpreted as plain text.

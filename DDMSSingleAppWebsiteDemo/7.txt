@@ -2,16 +2,21 @@ In this example, two Responses will be defined, one for the Homepage, and one fo
 the Pictures page.
 
 Additionally, three GlobalResponses will be defined, one for the opening html, one
-for the html for the main menu, and one for the closing html.
+for the main menu, and one for the closing html.
 
 3. Define the App's Responses and GlobalResponses:
 
    Run: vim "$HOME/SingleAppWebsite/Responses.sh"
+
    Add: dsh -n GlobalResponse "${app_name}" OpeningHtml 0
+
    Add: dsh -n GlobalResponse "${app_name}" MainMenu 1
+
    Add: dsh -n GlobalResponse "${app_name}" ClosingHtml 999999999999999
-   Add: dsh -n Response "${app_name}" Homepage 1
-   Add: dsh -n Response "${app_name}" Pictures 1
+
+   Add: dsh -n Response "${app_name}" Homepage 2
+
+   Add: dsh -n Response "${app_name}" Pictures 2
 
 Note: The position of the ClosingHtml GlobalResponse is set to high value to
       try and insure that it will always be served last, though this App is
