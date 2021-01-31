@@ -6,7 +6,7 @@ for the html for the main menu, and one for the closing html.
 
 3. Define the App's Responses and GlobalResponses:
 
-   Run: vim "$HOME/SingleAppSite/Responses.sh"
+   Run: vim "$HOME/SingleAppWebsite/Responses.sh"
    Add: dsh -n GlobalResponse "${app_name}" OpeningHtml 0
    Add: dsh -n GlobalResponse "${app_name}" MainMenu 1
    Add: dsh -n GlobalResponse "${app_name}" ClosingHtml 999999999999999

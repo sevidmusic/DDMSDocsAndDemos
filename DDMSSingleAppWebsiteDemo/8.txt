@@ -1,5 +1,5 @@
 In this example, three Requests will be defined for the Homepage, this is to
-reflect that the Homepage should be accesible at the following urls:
+reflect that the Homepage should be accessible at the following urls:
 
 http://singleappsite.example/
 http://singleappsite.example/index.php
@@ -11,7 +11,7 @@ http://singleappsite.example/index.php?Pictures
 4. Define the App's Requests and assign them to the appropriate Responses and
    GlobalResponses:
 
-   Run: vim "$HOME/SingleAppSite/Requests.sh"
+   Run: vim "$HOME/SingleAppWebsite/Requests.sh"
    Add: dsh -n Request "${app_name}" HomepageRoot HomepageRequests "\/"
    Add: dsh -a "${app_name}" Homepage HomepageRoot HomepageRequests Request
    Add: dsh -n Request "${app_name}" HomepageIndex HomepageRequests "index.php"

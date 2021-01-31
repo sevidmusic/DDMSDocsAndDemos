@@ -1,6 +1,6 @@
 The following Component types will be used in this example:
 
-Request                Represnts a url such as http://singleappsite.example/
+Request                Represents a url such as http://singleappsite.example/
                        Note: Requests can be used to represent any url, not just
                              urls relative to the domain the App is running on.
 
@@ -10,7 +10,7 @@ Response               Responses are used to group OutputComponents and
                        Request to the domain the App is running on.
 
 GlobalResponse         Global Responses are used to group OutputComponents and
-                       DynamicOutputComponens together whose output is intended
+                       DynamicOutputComponents together whose output is intended
                        to be shown in response to a all Requests to the domain
                        the App is running on.
 
@@ -18,6 +18,6 @@ OutputComponent        Represents an App's static output.
 
 DynamicOutputComponent Represents an App's dynamic output, this is output generated
                        by interpreting an assigned file that exists in either the
-                       Darling Data Managment System's SharedDynamicOutput directory,
+                       Darling Data Management System's SharedDynamicOutput directory,
                        or the App's DynamicOutput directory. This file can be a plain
                        text file, a PHP file, an html file, a json file, etc.

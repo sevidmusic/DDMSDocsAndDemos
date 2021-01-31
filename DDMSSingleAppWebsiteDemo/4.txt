@@ -2,12 +2,12 @@ The Darling Data Management System's understanding of an App is based on the App
 data. An App's data consists of the App's source code, and the Darling Data Management
 System Components that the App defines.
 
-The Darling Data Managment System provides a number of Components that can be used
+The Darling Data Management System provides a number of Components that can be used
 to to implement an App. Components are objects that conform to niche interfaces
 that represent the various parts of an application.
 
-Legos are a good analogy for Components, like legos, individual Components are
-used together to implement a larger design. Also, like legos, Components can be
+Legos are a good analogy for Components, like Legos, individual Components are
+used together to implement a larger design. Also, like Legos, Components can be
 reused in various contexts to implement a variety of designs.
 
 In this example a single App is going to generate a website.
