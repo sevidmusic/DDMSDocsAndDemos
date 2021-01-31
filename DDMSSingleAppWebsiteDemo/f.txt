@@ -1,0 +1,12 @@
+6. Define the App's dynamic output files in the App Package's DynamicOutput directory:
+
+6.b Create MainMenu.html:
+
+MainMenu.html
+<div class="main-menu-container">
+    <ul class="main-menu">
+        <li class="main-menu-item"><a href="index.php">Homepage</a></li>
+        <li class="main-menu-item"><a href="index.php?Pictures">Pictures</a></li>
+    </ul>
+</div>
+

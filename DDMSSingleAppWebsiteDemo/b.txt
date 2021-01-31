@@ -12,7 +12,7 @@
    Add: dsh -a "${app_name}" OpeningHtml OpenBodyTag StaticHtml OutputComponent
 
    Add: dsh -n DynamicOutputComponent "${app_name}" MainMenu DynamicOutput 0.3 "MainMenu.html"
-   Add: dsh -a "${app_name}" OpeningHtml MainMenu DynamicOutput DynamicOutputComponent
+   Add: dsh -a "${app_name}" MainMenu MainMenu DynamicOutput DynamicOutputComponent
 
    Add: dsh -n DynamicOutputComponent "${app_name}" Homepage DynamicOutput 0 "Homepage.php"
    Add: dsh -a "${app_name}" Homepage Homepage DynamicOutput DynamicOutputComponent

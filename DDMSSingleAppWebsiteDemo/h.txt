@@ -1,0 +1,4 @@
+6. Define the App's dynamic output files in the App Package's DynamicOutput directory:
+
+6.d Create Pictures.html:
+

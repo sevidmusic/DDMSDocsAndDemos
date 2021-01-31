@@ -1,4 +1,4 @@
-Finally, define the OutputComponents and DynamicOutputComponents for the website.
+Next, define the OutputComponents and DynamicOutputComponents for the website.
 
 Before doing this it is important to understand how an App's output is served to
 a user by the Darling Data Management System.
