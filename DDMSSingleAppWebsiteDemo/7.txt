@@ -1,8 +1,6 @@
 In this example, two Responses will be defined, one for the Homepage, and one for
-the Pictures page.
-
-Additionally, three GlobalResponses will be defined, one for the opening html, one
-for the main menu, and one for the closing html.
+the Pictures page. Also, three GlobalResponses will be defined, one for the opening
+html, one for the main menu, and one for the closing html.
 
 3. Define the App's Responses and GlobalResponses:
 
