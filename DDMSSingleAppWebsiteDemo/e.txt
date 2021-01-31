@@ -1,28 +1,21 @@
-6. Define the App's dynamic output files in the App Package's DynamicOutput directory:
-   Note: Make sure to also create any css or js files referenced in any html defined in
-         the dynamic output files. Css files should be placed in the App Package's css
-         directory, js files should be placed in the App Package's js directory.
+-- Define the App's dynamic output files in the App Package's DynamicOutput directory --
 
-6.a Create DynamicOutput/HtmlHead.php:
-    Run: vim "$HOME/SingleAppWebsite/DynamicOutput/HtmlHead.php"
-    Add:
-    <head>
-        <title>Single App Website Demo | <?php echo date(); ?></title>
-        <meta charset="UTF-8">
-        <meta name="description" content="Darling Data Management System">
-        <meta name="keywords" content="Darling Data Management System, dsh, demos, documentation">
-        <meta name="author" content="Sevi Donnelly Foreman">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="./Apps/SingleAppWebsite/css/styles.css" rel="stylesheet">
-    </head>
+Note: Make sure to also create any css or js files referenced in any html defined
+      in the dynamic output files. Css files should be placed in the App Package's
+      css directory, js files should be placed in the App Package's js directory.
+      This must be done so dsh knows to include them with the files copied from
+      the App Package to the App whenever dsh --make-app is run to make an
+      instance of the App.
 
-Note: The HtmlHead.php file's content contains a <link> tag that references a
-      css file, styles.css that is expected to exist in the App's css directory
-      when the App is run on a domain. This css file must be created in the App
-      Package's css directory in order for dsh to know to include it the files
-      copied from the App Package to the App whenever dsh --make-app is run to
-      make an instance of the App.
-
-6.a.1 Create css/styles.css:
-      body {  background: #000000; color: #ddf1ff; } /** Additional styles... */
-
+6. Create DynamicOutput/HtmlHead.php:
+   Run: vim "$HOME/SingleAppWebsite/DynamicOutput/HtmlHead.php"
+   Add:
+        <head>
+            <title>Single App Website Demo | <?php echo date(); ?></title>
+            <meta charset="UTF-8">
+            <meta name="description" content="Darling Data Management System">
+            <meta name="keywords" content="Darling Data Management System, dsh, demos, documentation">
+            <meta name="author" content="Sevi Donnelly Foreman">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="./Apps/SingleAppWebsite/css/styles.css" rel="stylesheet">
+        </head>
