@@ -2,7 +2,7 @@ The App in this example is going to generate a website, so the App will need to
 define OutputComponents and DynamicOutputComponents for the site's PHP, html,
 css, and javascript. In order for these OutputComponents and DynamicOutputComponents
 to be served to a user in response to an appropriate Request, they must be assigned
-to an appropriate Response or GlobalResponse.
+to either a Response that is assigned the relevant Request, or to a GlobalResponse.
 
 It is important to understand that Responses and GlobalResponses are sorted relative
 to each other by their assigned positions. Likewise, OutputComponents and
@@ -18,7 +18,7 @@ and 3 OutputComponents:
   GlobalResponse Bar, at position 0 assigned one OutputCompoent:
     Bazbiz at position 7 with output "<p>BazBizOutput<p>"
 
-Then the output of any Request to the domain the App is running on will produce
+Then any Request to the domain the App is running on will produce
 the following output to be interpreted by the web browser:
 
     <p>BazBizOutput</p>BazOutput--BazzerOutput--

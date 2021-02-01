@@ -1,3 +1,6 @@
+Requests represent urls. Requests are assigned to Responses that are meant to respond
+to the url the Request represents.
+
 In this example, three Requests will be defined for the Homepage, this is to reflect
 that the Homepage should be accessible at the following urls:
 http://APP_DOMAIN/    http://APP_DOMAIN/index.php    http://APP_DOMAIN/index.php?Homepage

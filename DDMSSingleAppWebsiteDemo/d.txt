@@ -9,8 +9,8 @@ These files need to be created in the App Package's DynamicOutput directory.
 
 Important note about file references within dynamic output files:
     Sometimes is may be necessary to reference a file from within a dynamic output
-    file, for example, a css file. Always make sure those files exist and are
-    accessible.
+    file, for example, an image, or a javascript file, or a css file etc. Always
+    make sure those files exist and are accessible.
 
     Css and javascript files referenced within a dynamic output file should be placed
     in the App Package's css and javascript directories, respectively, so that dsh
@@ -21,6 +21,6 @@ Important note about file references within dynamic output files:
 
 The App Package in this example will define the following css file in the App
 Package's css directory. This file will be referenced from a <link> tag defined
-in the HtmlHead.php file's content:
+in the HtmlHead.php dynamic output file's content:
 
     styles.css
