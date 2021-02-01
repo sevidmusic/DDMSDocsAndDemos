@@ -5,9 +5,9 @@ The HtmlHead.php dynamic output file's content contains a <link> tag that refere
 a css file, styles.css, this css file must be created in the App Package's css directory.
 
 7. Create css/styles.css:
-    Run: vim "$HOME/SingleAppWebsite/DynamicOutput/HtmlHead.php"
-    Add:
-         body {  background: #000000; color: #ddf1ff; }
-         .main-menu-container { list-style-type: none; }
-         .main-menu-item { list-style-type: none; }
+   Run: vim "$HOME/SingleAppWebsite/css/styles.php"
+   Add:
+        body {  background: #000000; color: #ddf1ff; }
+        .main-menu-container { list-style-type: none; }
+        .main-menu-item { list-style-type: none; }
 

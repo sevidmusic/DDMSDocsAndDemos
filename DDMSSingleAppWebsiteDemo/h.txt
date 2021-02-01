@@ -3,3 +3,10 @@
 
 9. Create Homepage.php:
 
+   Run: vim "$HOME/SingleAppWebsite/DynamicOutput/HtmlHead.php"
+
+   Add:
+        <h1>Welcome</h1>
+        <p>Today is:</p>
+        <p><?php echo date(); ?></p>
+
