@@ -1,6 +1,6 @@
 5. Define the App's OutputComponents and assign them to the appropriate Responses:
 
-   Run: vim "$HOME/SingleAppSite/OutputComponents.sh"
+   Run: vim "$HOME/SingleAppWebsite/OutputComponents.sh"
 
    Add: dsh -n OutputComponent "${app_name}" DoctypeOpenHtmlTag StaticHtml 0 '<!DOCTYPE><html lang="en">'
    Add: dsh -a "${app_name}" OpeningHtml DoctypeOpenHtmlTag StaticHtml OutputComponent
