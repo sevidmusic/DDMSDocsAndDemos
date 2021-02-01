@@ -3,11 +3,11 @@
 
 8. Create MainMenu.html:
 
-    Run: vim "$HOME/SingleAppWebsite/DynamicOutput/HtmlHead.php"
+    Run: vim "$HOME/SingleAppWebsite/DynamicOutput/MainMenu.html"
     Add:
          <div class="main-menu-container">
              <ul class="main-menu">
-                 <li class="main-menu-item"><a href="index.php">Homepage</a></li>
-                 <li class="main-menu-item"><a href="index.php?Pictures">Pictures</a></li>
+                 <li class="main-menu-item"><a class="main-menu-link" href="index.php">Homepage</a></li>
+                 <li class="main-menu-item"><a class="main-menu-link" href="index.php?Pictures">Pictures</a></li>
              </ul>
          </div>

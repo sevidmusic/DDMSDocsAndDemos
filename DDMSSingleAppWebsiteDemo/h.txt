@@ -3,7 +3,7 @@
 
 9. Create Homepage.php:
 
-   Run: vim "$HOME/SingleAppWebsite/DynamicOutput/HtmlHead.php"
+   Run: vim "$HOME/SingleAppWebsite/DynamicOutput/Homepage.php"
 
    Add:
         <h1>Welcome</h1>

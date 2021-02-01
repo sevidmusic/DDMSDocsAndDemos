@@ -8,6 +8,4 @@ a css file, styles.css, this css file must be created in the App Package's css d
    Run: vim "$HOME/SingleAppWebsite/css/styles.php"
    Add:
         body {  background: #000000; color: #ddf1ff; }
-        .main-menu-container { list-style-type: none; }
-        .main-menu-item { list-style-type: none; }
 

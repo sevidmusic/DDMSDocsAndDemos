@@ -1,13 +1,16 @@
-The App in this example is going to generate a website, so the App will need to
-define OutputComponents and DynamicOutputComponents for the site's PHP, html,
-css, and javascript. In order for these OutputComponents and DynamicOutputComponents
-to be served to a user in response to an appropriate Request, they must be assigned
-to either a Response that is assigned the relevant Request, or to a GlobalResponse.
+The App in this example is going to generate a website, so the App's App Package
+will need to define OutputComponents and DynamicOutputComponents for the site's
+PHP, html, css, and javascript.
 
-It is important to understand that Responses and GlobalResponses are sorted relative
-to each other by their assigned positions. Likewise, OutputComponents and
-DynamicOutputComponents are also sorted relative to each other by their assigned
+In order for these OutputComponents and DynamicOutputComponents to be served to a
+user in response to an appropriate Request, they must be assigned to either a
+Response that is assigned the relevant Request, or to a GlobalResponse.
+
+It is important to understand that Responses and GlobalResponses are sorted
+relative to each other by their assigned positions. Likewise, OutputComponents
+and DynamicOutputComponents are also sorted relative to each other by their assigned
 position within the context of the Response or GlobalResponse they are assigned to.
+
 For example, say a single App is running on a domain, and it defines two GlobalResponses,
 and 3 OutputComponents:
 

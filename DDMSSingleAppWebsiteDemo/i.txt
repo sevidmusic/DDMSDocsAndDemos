@@ -4,3 +4,7 @@
 10. Create Pictures.html:
 
 Add:
+    <h1>Pictures</h1>
+    <script>
+        console.log('Js is running on the Pictures page :)');
+    </script>

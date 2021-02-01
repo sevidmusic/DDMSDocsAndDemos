@@ -1,0 +1,19 @@
+The purpose of an App Package is to provide a snapshot of an App that can be used
+to reproduce a working instance of the App for a Darling Data Management System
+installation.
+
+An instance of an App can be made from an App Package via the dsh --make-app command.
+
+First, dsh --make-app will create a new instance of the App, via an internal call
+to the dsh --new App command.
+
+Then, it will copy the App Package's css, js, and DynamicOutput directories to
+the new App.
+
+Finally, it will run the App Package's Responses.sh, Requests.sh, and OutputComponents.sh
+configuration scripts to create the PHP configuration files for the App's Components via
+the dsh calls defined in the App Package's Responses.sh, Requests.sh, and OutputComponents.sh
+configuration scripts.
+
+11. Make the SingleAppWebsite App from the SingleAppWebsite App Package
+     dsh -m "$HOME/SingleAppWebsite"

@@ -12,12 +12,12 @@ Important note about file references within dynamic output files:
     file, for example, an image, or a javascript file, or a css file etc. Always
     make sure those files exist and are accessible.
 
-    Css and javascript files referenced within a dynamic output file should be placed
-    in the App Package's css and javascript directories, respectively, so that dsh
-    knows to include them with the files copied from the App Package to the App
-    whenever an instance of the App is made via dsh --make-app. The one exception
-    to this is if the referenced files are served form a CDN or other location
-    outside of the Darling Data Management System.
+    Local css and javascript files referenced within a dynamic output file should
+    be placed in the App Package's css and javascript directories, respectively,
+    so that dsh knows to include them with the files copied from the App Package
+    to the App whenever an instance of the App is made via dsh --make-app. The
+    one exception to this is if the referenced css or javascript files are served
+    form a CDN or other location outside of the Darling Data Management System.
 
 The App Package in this example will define the following css file in the App
 Package's css directory. This file will be referenced from a <link> tag defined

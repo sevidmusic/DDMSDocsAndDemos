@@ -5,7 +5,7 @@
    Add: dsh -n OutputComponent "${app_name}" DoctypeOpenHtmlTag StaticHtml 0 '<!DOCTYPE><html lang="en">'
    Add: dsh -a "${app_name}" OpeningHtml DoctypeOpenHtmlTag StaticHtml OutputComponent
 
-   Add: dsh -n DynamicOutputComponent "${app_name}" Head DynamicOutput 0.1 "HtmlHead.php"
+   Add: dsh -n DynamicOutputComponent "${app_name}" HtmlHead DynamicOutput 0.1 "HtmlHead.php"
    Add: dsh -a "${app_name}" OpeningHtml HtmlHead DynamicOutput DynamicOutputComponent
 
    Add: dsh -n OutputComponent "${app_name}" OpenBodyTag StaticHtml 0.2 '<body>'
