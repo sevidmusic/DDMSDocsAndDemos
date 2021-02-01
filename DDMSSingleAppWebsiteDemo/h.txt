@@ -8,5 +8,5 @@
    Add:
         <h1>Welcome</h1>
         <p>Today is:</p>
-        <p><?php echo date(); ?></p>
+        <p><?php echo date('l jS \of F Y h:i:s A'); ?></p>
 

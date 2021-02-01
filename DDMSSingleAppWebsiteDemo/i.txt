@@ -3,8 +3,31 @@
 
 10. Create Pictures.html:
 
-Add:
-    <h1>Pictures</h1>
+    Run: vim "$HOME/SingleAppWebsite/DynamicOutput/Pictures.html"
+
+    Add:
+    <div class="selected-image-container">
+      <img class="selected-image" src="" id="selectedImage">
+    </div>
+
+    <div class="image-selector">
+      <div class="selectable-image-container">
+        <img class="selectable-image" src="" alt="Image1" onclick="selectImage(this);">
+      </div>
+      <div class="selectable-image-container">
+        <img class="selectable-image" src="" alt="Image2" onclick="selectImage(this);">
+      </div>
+      <div class="selectable-image-container">
+        <img class="selectable-image" src="" alt="Image3" onclick="selectImage(this);">
+      </div>
+      <div class="selectable-image-container">
+        <img class="selectable-image" src="" alt="Image4" onclick="selectImage(this);">
+      </div>
+    </div>
     <script>
-        console.log('Js is running on the Pictures page :)');
+        function selectImage(imageToSelect) {
+            var selectedImage = document.getElementById("selectedImage");
+            selectedImage.src = imageToSelect.src;
+            selectedImage.alt = imageToSelect.alt;
+        }
     </script>
