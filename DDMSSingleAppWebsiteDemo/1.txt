@@ -8,5 +8,4 @@ css styles, some javascript, and appropriate links to navigate the site.
 
 Single App Site Pages:
 1. Homepage: Show a welcome message.
-2. Pictures: Show a simple image gallery that uses javascript to cycle through
-   the pictures.
+2. Pictures: Show a simple image gallery that uses javascript for image selection.
