@@ -1,7 +1,3 @@
-The purpose of an App Package is to provide a snapshot of an App that can be used
-to reproduce a working instance of the App for a Darling Data Management System
-installation.
-
 An instance of an App can be made from an App Package via the dsh --make-app command.
 
 First, dsh --make-app will create a new instance of the App, via an internal call

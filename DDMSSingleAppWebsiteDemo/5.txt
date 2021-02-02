@@ -1,6 +1,6 @@
 The following Component types will be used in this example:
 
-Request                Represents a url such as http://APP_DOMAIN/
+Request                Represents a url such as http://DOMAIN/
                        Note: Requests can be used to represent any url, not just
                              urls relative to the domain the App is running on.
 

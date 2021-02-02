@@ -1,6 +1,9 @@
 The first step in the development process with the Darling Data Management System
 is always to create a new App Package for the App to be developed.
 
+The purpose of an App Package is to provide a snapshot of an App that can be used
+to reproduce an instance of the App for a Darling Data Management System installation.
+
 Step 1. Create a new App Package for the App that will generate output for
         the website, this App will be named "SingleAppWebsite":
 

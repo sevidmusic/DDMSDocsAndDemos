@@ -1,18 +1,32 @@
--- Define the App's dynamic output files in the App Package's DynamicOutput directory --
------------ Also create any files referenced within the dynamic output files -----------
+The App Package in this example defines a DynamicOutputComponent named HtmlHead
+which references a dynamic output file named HtmlHead.php, this file must be created
+in the App Package's DynamicOutput directory.
 
 6. Create DynamicOutput/HtmlHead.php:
    Run: vim "$HOME/SingleAppWebsite/DynamicOutput/HtmlHead.php"
    Add:
-        <head>
-            <title>Single App Website Demo | <?php echo ( !empty(array_pop($_GET)) ? array_pop($_GET) : 'Homepage' ); ?></title>
-            <meta charset="UTF-8">
-            <meta name="description" content="Darling Data Management System">
-            <meta name="keywords" content="Darling Data Management System, dsh">
-            <meta name="author" content="Sevi Donnelly Foreman">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <!-- Note: The following css file must exist in the App Package's css -->
-            <!--       directory so dsh knows to include it when dsh --make-app   -->
-            <!--       is run.                                                    -->
-            <link href="./Apps/SingleAppWebsite/css/styles.css" rel="stylesheet">
-        </head>
+        <?php
+        require str_replace('/Apps/SingleAppWebsite/DynamicOutput','',__DIR__) . DIRECTORY_SEPARATOR . 'vendor/autoload.php';
+        use DarlingDataManagementSystem\classes\component\Web\Routing\Request;
+        use DarlingDataManagementSystem\classes\primary\Storable;
+        use DarlingDataManagementSystem\classes\primary\Switchable;
+        $currentRequest = new Request(
+            new Storable(
+                'CurrentRequest',
+                'AppRequests',
+                'CurrentRequests'
+            ),
+            new Switchable()
+        );
+        $getKeys = array_flip($currentRequest->getGet());
+        $pagename = array_pop($getKeys);
+        ?>
+                <head>
+                    <title><?php echo (!empty($pagename) ? $pagename : 'Homepage'); ?>  | Single App Website Demo | <?php echo date('m/d/Y h:m A'); ?></title>
+                    <meta charset="UTF-8">
+                    <meta name="description" content="Darling Data Management System">
+                    <meta name="keywords" content="Darling Data Management System, dsh">
+                    <meta name="author" content="Sevi Donnelly Foreman">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="./Apps/SingleAppWebsite/css/styles.css" rel="stylesheet">
+                </head>
