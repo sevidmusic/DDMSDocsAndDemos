@@ -3,6 +3,8 @@ and setup via composer.
 
 The Darling Data Management System requires Php >= 7.4
 
+The Darling Data Management System requires Composer.
+
 Please make sure you are in the directory you want to install the
 Darling Data Management System in before installing the Darling
 Data Management System.
