@@ -1,9 +1,7 @@
 The Darling Data Management System can be installed from GitHub
-and setup via composer.
+and setup via Composer.
 
 The Darling Data Management System requires Php >= 7.4
-
-The Darling Data Management System requires Composer.
 
 Please make sure you are in the directory you want to install the
 Darling Data Management System in before installing the Darling
@@ -11,11 +9,13 @@ Data Management System.
 
 -- Installation Steps --
 
-1. Clone the Darling Data Management System from GitHub:
-     git clone https://github.com/sevidmusic/DarlingDataManagementSystem.git
+1. cd "$HOME/Downloads"
 
-2. Move into the DarlingDataManagementSystem directory:
-     cd DarlingDataManagementSystem
+2. Clone the Darling Data Management System from GitHub:
+   Run: git clone https://github.com/sevidmusic/DarlingDataManagementSystem.git
 
-3. Run composer to set everything up:
-     composer update && composer upgrade
+3. Move into the DarlingDataManagementSystem directory:
+   Run: cd DarlingDataManagementSystem
+
+4. Run composer to set everything up:
+   Run: composer update && composer upgrade
