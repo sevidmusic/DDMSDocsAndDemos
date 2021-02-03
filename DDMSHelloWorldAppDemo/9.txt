@@ -1,7 +1,16 @@
-8. View the new HelloWorld App running on http://localhost:8080 in a web browser.
-     w3m http://localhost:8080
+The following is an overview of the steps taken in this demo:
 
-   Note: "w3m" is the browser used in this demo, w3m is awesome, but it is not 
-         required or related to the Darling Data Management System.
+- The App Package for the HelloWorld App was created via dsh --new AppPackage.
 
-         
+- The appropriate HelloWorld App Package files were configured manually using
+  a text editor.
+
+- The HelloWorld App was made from the HelloWorld App Package via dsh --make-app.
+
+- The HelloWorld App was built via dsh --build-app.
+
+- A development server was started at http://localhost:8080 via dsh --start-development-server.
+
+The new HelloWorld App is now running on http://localhost:8080 and can be accessed
+from a web browser.
+
