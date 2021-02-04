@@ -9,16 +9,16 @@
 
     <div class="image-selector">
       <div class="selectable-image-container">
-        <img class="selectable-image" src="" alt="Image1" onclick="selectImage(this);">
+        <img class="selectable-image" src="https://ddmsmedia.us-east-1.linodeobjects.com/DDMSDemoImg1.png" alt="Image1" onclick="selectImage(this);">
       </div>
       <div class="selectable-image-container">
-        <img class="selectable-image" src="" alt="Image2" onclick="selectImage(this);">
+        <img class="selectable-image" src="https://ddmsmedia.us-east-1.linodeobjects.com/DDMSDemoImg2.png" alt="Image2" onclick="selectImage(this);">
       </div>
       <div class="selectable-image-container">
-        <img class="selectable-image" src="" alt="Image3" onclick="selectImage(this);">
+        <img class="selectable-image" src="https://ddmsmedia.us-east-1.linodeobjects.com/DDMSDemoImg3.png" alt="Image3" onclick="selectImage(this);">
       </div>
       <div class="selectable-image-container">
-        <img class="selectable-image" src="" alt="Image4" onclick="selectImage(this);">
+        <img class="selectable-image" src="https://ddmsmedia.us-east-1.linodeobjects.com/DDMSDemoImg4.png" alt="Image4" onclick="selectImage(this);">
       </div>
     </div>
     <script>
