@@ -1,0 +1,25 @@
+The next step is to create any dynamic output files referenced by the
+DynamicOutputComponents defined by the App Package.
+
+The Darling Data Management System expects dynamic output files to exist
+in either the relevant App's DynamicOutput directory, or the Darling Data
+Management System's SharedDynamicOutput directory.
+
+For example:
+    /path/to/Darling/Data/Management/System/Apps/APP_NAME/DynamicOutput/DYNAMIC_OUTPUT_FILE
+    or
+    /path/to/Darling/Data/Management/System/SharedDynamicOutput/DYNAMIC_OUTPUT_FILE
+
+Dynamic output files that are used by a single App should be defined in the
+relevant App Package's DynamicOutput directory so that dsh can copy them to the
+App's DynamicOutput directory whenever an instance of the App is made from the
+App Package via dsh --make-app.
+
+Dynamic output files that are used by multiple App's should be placed in the Darling
+Data Management System's SharedDynamicOutput directory. These dynamic output files
+must be created and maintained manually since they are not related to a specific
+App.
+
+If an App defines a dynamic output file that shares a name with a dynamic output
+file defined in the SharedDynamicOutput directory, the  App's dynamic output file
+will be used.

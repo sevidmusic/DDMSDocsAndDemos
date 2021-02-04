@@ -1,0 +1,14 @@
+The App Package in this example defines a DynamicOutputComponent named MainMenu
+which references a dynamic output file named MainMenu.html, this file must be created
+in the App Package's DynamicOutput directory.
+
+8. Create MainMenu.html:
+
+    Run: vim "$HOME/SingleAppWebsite/DynamicOutput/MainMenu.html"
+    Add:
+         <div class="main-menu-container">
+             <ul class="main-menu">
+                 <li class="main-menu-item"><a class="main-menu-link" href="index.php">Homepage</a></li>
+                 <li class="main-menu-item"><a class="main-menu-link" href="index.php?Pictures">Pictures</a></li>
+             </ul>
+         </div>

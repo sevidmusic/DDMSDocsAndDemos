@@ -1,0 +1,25 @@
+Requests represent urls. Requests are assigned to Responses that are meant to respond
+to the url the Request represents.
+
+In this example, three Requests will be defined for the Homepage, this is to reflect
+that the Homepage should be accessible at the following urls:
+http://APP_DOMAIN/    http://APP_DOMAIN/index.php    http://APP_DOMAIN/index.php?Homepage
+
+The Pictures page only requires one Request so it is accessible at:
+http://APP_DOMAIN/index.php?Pictures
+
+4. Define the App's Requests and assign them to the appropriate Responses and GlobalResponses:
+
+   Run: vim "$HOME/SingleAppWebsite/Requests.sh"
+
+   Add: dsh -n Request "${app_name}" HomepageRoot HomepageRequests "\/"
+   Add: dsh -a "${app_name}" Homepage HomepageRoot HomepageRequests Request
+
+   Add: dsh -n Request "${app_name}" HomepageIndex HomepageRequests "index.php"
+   Add: dsh -a "${app_name}" Homepage HomepageIndex HomepageRequests Request
+
+   Add: dsh -n Request "${app_name}" Homepage HomepageRequests "index.php?Hompeage"
+   Add: dsh -a "${app_name}" Homepage Homepage HomepageRequests Request
+
+   Add: dsh -n Request "${app_name}" Pictures PicturesRequests "index.php?Pictures"
+   Add: dsh -a "${app_name}" Pictures Pictures PicturesRequests Request

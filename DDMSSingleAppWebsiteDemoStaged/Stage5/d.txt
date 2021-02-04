@@ -1,0 +1,26 @@
+The App Package in this example will define the following dynamic output files:
+
+    HtmlHead.php
+    MainMenu.html
+    Homepage.php
+    Pictures.html
+
+These files need to be created in the App Package's DynamicOutput directory.
+
+Important note about file references within dynamic output files:
+    Sometimes is may be necessary to reference a file from within a dynamic output
+    file, for example, an image, or a javascript file, or a css file etc. Always
+    make sure those files exist and are accessible.
+
+    Local css and javascript files referenced within a dynamic output file should
+    be placed in the App Package's css and javascript directories, respectively,
+    so that dsh knows to include them with the files copied from the App Package
+    to the App whenever an instance of the App is made via dsh --make-app. The
+    one exception to this is if the referenced css or javascript files are served
+    form a CDN or other location outside of the Darling Data Management System.
+
+The App Package in this example will define the following css file in the App
+Package's css directory. This file will be referenced from a <link> tag defined
+in the HtmlHead.php dynamic output file's content:
+
+    styles.css
