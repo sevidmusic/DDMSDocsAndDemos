@@ -1,9 +1,27 @@
-App's are made from App Packages via the dsh --make-app command.
+When a user makes a Request to the domain of a website running on the Darling
+Data Management System the first thing that happens is the Darling Data Management
+System attempts to determine which Responses and GlobalResponses respond to the
+current Request so the appropriate output can be served to the user.
 
-In order for the App Package to be able to be made into an App later via dsh --make-app,
-the bash scripts in the App package must be executable.
+Responses are used to group OutputComponents and DynamicOutputComponents together
+whose output is intended to be shown in response to a specific Request to the
+domain the App is running on, as opposed to GlobalResponses which are used to group
+OutputComponents and DynamicOutputComponents together whose output is intended to
+be shown in response to a all Requests to the domain the App is running on.
 
-2. Make sure the App Package's scripts are executable
+Once the Darling Data Management System determines which Responses and GlobalResponses
+respond to the current Request, the collective output of the OutputComponents and
+DynamicOutputComponents assigned to each of the Responses and GlobalResponses that
+respond to the current Request is shown to the user.
 
-   Run: chmod -R 0755 $HOME/HelloWorld/*.sh
+It is usually best to define the App's Responses and GlobalResponses first, this
+will help to make the App's larger structure clear before other Components are
+defined.
 
+In this example, only one GlobalResponse will be defined.
+
+3. Define a GlobalResponse for the HelloWorld App
+
+   Run: vim "$HOME/HelloWorld/Responses.sh"
+
+   Add: dsh -n GlobalResponse "${app_name}" HelloWorldResponse 0

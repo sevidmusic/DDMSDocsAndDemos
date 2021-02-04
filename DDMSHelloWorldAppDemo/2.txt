@@ -1,10 +1,9 @@
-The first step in the development process with the Darling Data Management System
-is always to create a new App Package for the App to be developed.
+App's are made from App Packages via the dsh --make-app command.
 
-The purpose of an App Package is to provide a snapshot of an App that can be used
-to reproduce an instance of the App for a Darling Data Management System installation.
+In order for the App Package to be able to be made into an App later via dsh --make-app,
+the bash scripts in the App package must be executable.
 
-Step 1. Creatae a new App Package for the HelloWorld App
+2. Make sure the App Package's scripts are executable
 
-        Run: dsh -n AppPackage HelloWorld "$HOME"
+   Run: chmod -R 0755 $HOME/HelloWorld/*.sh
 

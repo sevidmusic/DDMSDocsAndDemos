@@ -1,19 +1,18 @@
-Once an App has been made via dsh --make-app, it can be built for one or more
-domains via the dsh --build-app command.
+App's can be built to run on one, or many domains.
 
-By default dsh --build-app will build an App for the domain defined in the App's
-Components.php file. This domain will have been set by dsh --make-app to the value
-assigned to the domain variable defined in the relevant App Packages config.sh
-configuration script.
+While an App is in development it can be useful to be able to run an App on one
+or more local domains.
 
-It is safe to modify the domain defined in the App's Components.php file after
-the App has been made, however, dsh --build-app takes an optional domain as the
-second parameter, so there is really no need to modify the domain set in App's
-Components.php file, instead just use dsh --build-app [APP_NAME] [DOMAIN] to
-easily build the App for one or more domains.
+PHP is a wonderful language, and provides a built in web server that can be used
+as a simple local development server. More information about PHP's built in server
+can be found at:
+    https://www.php.net/manual/en/features.commandline.webserver.php
 
-6. Build the HelloWorld App to run on http://localhost:8080
+dsh can be used to start a development server via PHP on a specific port on localhost:
 
-     Run: dsh -b HelloWorld "http://localhost:8080"
+Once started, the server can be reached from a web browser via http://localhost:PORT
 
+7. Start a development server on local host at port 8080
+   Development server will be reachable via http://localhost:8080
 
+   Run: dsh -s 8080

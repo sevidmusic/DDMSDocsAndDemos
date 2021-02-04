@@ -1,18 +1,16 @@
-App's can be built to run on one, or many domains.
+The following is an overview of the steps taken in this demo:
 
-While an App is in development it can be useful to be able to run an App on one
-or more local domains.
+- The App Package for the HelloWorld App was created via dsh --new AppPackage.
 
-PHP is a wonderful language, and provides a built in web server that can be used
-as a simple local development server. More information about PHP's built in server
-can be found at:
-    https://www.php.net/manual/en/features.commandline.webserver.php
+- The appropriate HelloWorld App Package files were configured manually using
+  a text editor.
 
-dsh can be used to start a development server via PHP on a specific port on localhost:
+- The HelloWorld App was made from the HelloWorld App Package via dsh --make-app.
 
-Once started, the server can be reached from a web browser via http://localhost:PORT
+- The HelloWorld App was built via dsh --build-app.
 
-7. Start a development server on local host at port 8080
-   Development server will be reachable via http://localhost:8080
+- A development server was started at http://localhost:8080 via dsh --start-development-server.
 
-   Run: dsh -s 8080
+The new HelloWorld App is now running on http://localhost:8080 and can be accessed
+from a web browser.
+
