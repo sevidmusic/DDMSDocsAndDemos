@@ -1,0 +1,16 @@
+The following is an overview of the steps taken in this demo:
+
+- The App Package for the SingleAppWebsite App was created via dsh --new AppPackage.
+
+- The appropriate SingleAppWebsite App Package files were configured manually using
+  a text editor.
+
+- The SingleAppWebsite App was made from the SingleAppWebsite App Package via dsh --make-app.
+
+- The SingleAppWebsite App was built via dsh --build-app.
+
+- A development server was started at http://localhost:8080 via dsh --start-development-server.
+
+The new SingleAppWebsite App is now running on http://localhost:8080 and can be accessed
+from a web browser.
+

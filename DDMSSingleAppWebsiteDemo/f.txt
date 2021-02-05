@@ -4,23 +4,22 @@ a css file, styles.css, this css file must be created in the App Package's css d
 7. Create css/styles.css:
    Run: vim "$HOME/SingleAppWebsite/css/styles.css"
    Add:
-        body {  background: #000000; color: #ddf1ff; }
-body {  background: #000000; color: #ddf1ff; font-family: monospace; }
+        body {  background: #000000; color: #ddf1ff; font-family: monospace; }
 
-.selectable-image-container { float: left; margin: .5em 1.2em; }
+        .selectable-image-container { float: left; margin: .5em 1.2em; }
 
-.selectable-image { opacity: .5; width: 5em; cursor: pointer; border: 2px double #fafaff; }
+        .selectable-image { opacity: .5; width: 5em; cursor: pointer; border: 2px double #fafaff; }
 
-.selectable-image:hover {opacity: 1; width: 5.3em; cursor: pointer; border: 2px solid #fafaff; }
+        .selectable-image:hover {opacity: 1; width: 5.3em; cursor: pointer; border: 2px solid #fafaff; }
 
-ul li { display: inline; }
+        ul li { display: inline; }
 
-a { color: #09b278; text-decoration: none; }
+        a { color: #09b278; text-decoration: none; }
 
-a:hover { color: #fafaff; }
+        a:hover { color: #fafaff; }
 
-.selected-image { margin-left: 3em; width: 25em; }
+        .selected-image { margin-left: 3em; width: 25em; }
 
-h1 { margin-left: 1.4em; }
+        h1 { margin-left: 1.4em; }
 
-p { margin-left: 3em; }
+        p { margin-left: 3em; }
